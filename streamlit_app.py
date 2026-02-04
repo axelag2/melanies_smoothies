@@ -8,10 +8,10 @@ cnx = st.connection(
   account = "KJIZNYL-BIB20935",
   user = "AXELVISEO",
   authenticator = "externalbrowser"
-# role = "ACCOUNTADMIN"
-# warehouse = "COMPUTE_WH"
-# database = "SMOOTHIES"
-# schema = "PUBLIC"
+  role = "ACCOUNTADMIN",
+  warehouse = "COMPUTE_WH",
+  database = "SMOOTHIES",
+  schema = "PUBLIC"
 )
 session = cnx.session()
 
