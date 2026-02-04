@@ -3,7 +3,7 @@ import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 
-cnx = st.connection("snowflake")
+cnx = st.connection("my_co",type="snowflake")
 session = cnx.session()
 
 st.write(st.secrets)
