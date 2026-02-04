@@ -3,10 +3,8 @@ import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 
-cnx = st.connection("snowflake",type="snowflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
-
-st.write(st.secrets)
 
 # Write directly to the app
 st.title(f"Custom Your Smoothie :cup_with_straw: !")
