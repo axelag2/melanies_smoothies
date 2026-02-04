@@ -6,6 +6,8 @@ from snowflake.snowpark.functions import col
 cnx = st.connection("snowflake")
 session = cnx.session()
 
+st.write(st.secrets)
+
 # Write directly to the app
 st.title(f"Custom Your Smoothie :cup_with_straw: !")
 st.write(
