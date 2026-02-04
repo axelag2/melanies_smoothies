@@ -5,8 +5,8 @@ from snowflake.snowpark.functions import col
 
 cnx = st.connection(
   type="snowflake",
-  account = "KJIZNYL-BIB20935"
-  user = "AXELVISEO"
+  account = "KJIZNYL-BIB20935",
+  user = "AXELVISEO",
   authenticator = "externalbrowser"
 # role = "ACCOUNTADMIN"
 # warehouse = "COMPUTE_WH"
