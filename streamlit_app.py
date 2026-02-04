@@ -3,16 +3,7 @@ import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 
-cnx = st.connection(
-  type="snowflake",
-  account = "KJIZNYL-BIB20935",
-  user = "AXELVISEO",
-  authenticator = "externalbrowser",
-  role = "ACCOUNTADMIN",
-  warehouse = "COMPUTE_WH",
-  database = "SMOOTHIES",
-  schema = "PUBLIC"
-)
+cnx = = st.connection("snowflake")
 session = cnx.session()
 
 # Write directly to the app
